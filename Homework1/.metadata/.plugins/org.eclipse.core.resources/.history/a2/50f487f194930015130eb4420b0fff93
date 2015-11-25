@@ -15,10 +15,10 @@ public class task3 {
         System.out.println("Моля въведете Години: ");
         Byte age = input.nextByte();
         
-        input.nextLine();                              //Tazi komanda se slaga kogato preskacha reda
+        //input.nextLine();
         
         System.out.println("Моля въведете пол (М/Ж): ");	//ASK
-        char sex = input.next().charAt(0);                  //kak daizpolzvame char kato go nqma v metoda
+        String sex = input.nextLine();
         
         System.out.println("Моля въведете ЕГН: ");
         Long EGN = input.nextLong();
