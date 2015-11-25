@@ -1,0 +1,39 @@
+
+public class task3 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in, "UTF-8");
+
+        System.out.println("Моля въведете Име: ");
+        String name = input.nextLine();
+        
+        System.out.println("Моля въведете Фамилия : ");
+        String surname = input.nextLine();
+        
+        System.out.println("Моля въведете Години: ");
+        Byte age = input.nextLine();
+        
+        System.out.println("Моля въведете Пол (М/Ж): ");
+        Byte MaleFemale = input.nextLine();
+        
+        System.out.println("Моля въведете ЕГН: ");
+        Long EGN = input.nextLine();
+        
+        System.out.println("Моля въведете Телефон : ");
+        int phone = input.nextInt();
+
+        System.out.println("Name: " + name);
+        System.out.println("Surname: " + surname);
+        System.out.println("Age : " + age);
+        System.out.println("Sex : " + MaleFemale);
+        System.out.println("EGN : " + EGN);
+        System.out.println("Phone : " + phone);
+                
+        input.close();
+    
+        
+        
+	}
+
+}

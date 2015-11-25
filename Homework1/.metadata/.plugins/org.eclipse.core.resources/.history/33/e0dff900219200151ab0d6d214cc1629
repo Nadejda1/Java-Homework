@@ -1,0 +1,18 @@
+
+public class Task9ConsoleReadAndWriteChetnoOrNechetnoChislo {
+
+	public static void main(String[] args) {
+		 Scanner input = new Scanner(System.in, "UTF-8");
+
+	        System.out.print("Въведете число: ");
+	        int а = input.nextInt();
+	        int a;
+	        int b = (a%2);
+	        boolean result = b==0;
+	        System.out.print("Числото е четно: " + result);
+	        			        
+	        input.close();
+
+	}
+
+}

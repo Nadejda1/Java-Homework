@@ -1,0 +1,26 @@
+
+public class task2 {
+
+	public static void main(String[] args) {
+		int a,b,c;
+		a=5;
+		b=8;
+		
+		change(a,b);
+		
+//		c=a;
+//		a=b;
+//		b=c;
+		System.out.println("a = "+a + ", b = " + b);
+	}	
+	
+	public static void change(int edno, int dve){
+		int tri;
+		tri=edno;
+		edno=dve;
+		dve=tri;
+		System.out.println("a = "+edno + ", b = " + dve);
+		
+	//	return tri;
+	}
+}
