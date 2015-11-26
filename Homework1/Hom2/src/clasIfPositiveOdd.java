@@ -6,21 +6,19 @@ public class clasIfPositiveOdd {
 		Scanner input = new Scanner(System.in, "UTF-8");
 		System.out.println("Моля въведете число :");
 		int num = input.nextInt();
+		int b = num % 2;
 		if (num < 0) {
-			int b = num % 2;
-			boolean result = b == 0;
-			if (result) {
+			if (b==0) 
+			{
 				System.out.print("Negative Even");
 			} else
 				System.out.print("Negative Odd");
-		} else if (num>0)		{
-			int b = num % 2;
-			boolean result = b == 0;
-			if (result) {
+		} else if (num>0)		
+			if (b==0) {
 				System.out.print("Positive Even");
 			} else
-				System.out.print("Negative Odd");
-		}else {
+				System.out.print("Positive Odd");
+		else {
 			System.out.print("Null");
 		}
 	}

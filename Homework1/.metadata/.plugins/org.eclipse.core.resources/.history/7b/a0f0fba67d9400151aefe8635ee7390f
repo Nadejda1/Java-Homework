@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class H2_2 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		System.out.println("Моля въведете число :");
+		int num = input.nextInt();
+
+
+	}
+
+}

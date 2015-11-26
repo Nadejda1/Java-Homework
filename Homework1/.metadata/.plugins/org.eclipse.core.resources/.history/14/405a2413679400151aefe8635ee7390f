@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class H2 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		System.out.println("Моля въведете число:");
+		int a = input.nextInt();
+		int b=a%2;
+		if (a==0){
+			System.out.print("Zero");
+		}
+		else if (a<0){
+			if (b==0){                             // Защо трябва да е ==, а не само =
+				System.out.print("Negative Even");	
+			}
+			else {
+				System.out.print("Negative Odd");
+			}}
+			else if (b==0){
+				System.out.print("Positive Even");	
+			}
+			System.out.print("Positive Odd");
+		}
+
+	}

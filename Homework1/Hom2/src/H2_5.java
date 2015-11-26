@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class H2_5 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		System.out.println("Pls insert number 1:");
+		int a = input.nextInt();
+		System.out.println("Pls insert number 2:");
+		int b = input.nextInt();
+		System.out.println("Pls insert number 3:");
+		int c = input.nextInt();
+if (a<=0^b<=0^c<=0){
+	System.out.println("The sides of a triangle cannot be negative or null");
+}
+else if ((a+b)>c&&(b+c)>a&&(a+c)>b){
+	System.out.println("The numbers entered can be sides of a triangle");
+}
+else {
+	System.out.println("The numbers entered cannot be sides of a triangle");
+}}}

@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class H2_3 {
+
+	public static void main(String[] args) {
+			Scanner input = new Scanner(System.in, "UTF-8");
+			System.out.println("Pls insert number 1:");
+			int a = input.nextInt();
+			System.out.println("Pls insert number 2:");
+			int b = input.nextInt();
+			System.out.println("Pls insert number 3:");
+			int c = input.nextInt();
+if ((a-b)>0) {
+if ((a-c)>0) {
+	System.out.println("Number 1 1s the biggest number:");	
+}
+else if (a!=c){
+	System.out.println("Number 3 1s the biggest number:");	
+}
+else {
+	System.out.println("Number 1 and number 3 are equal and bigger than number 2:");
+}}
+else if (a!=b) {
+if ((b-c)>0){
+	System.out.println("Number 2 1s the biggest number:");
+}
+else if (b!=c){
+	System.out.println("Number 3 1s the biggest number:");
+}
+else {
+	System.out.println("Number 2 and number 3 are equal and bigger than number 1:");
+}}
+else if (a!=c){
+	if ((a-c)>0) {
+		System.out.println("Number 1 and number 2 are equal and bigger than number 3:");	
+	}
+	else {
+		System.out.println("Number 3 1s the biggest number:");
+			}}
+	else {
+		System.out.println("all numbers are equal:");
+}
+}
+}
