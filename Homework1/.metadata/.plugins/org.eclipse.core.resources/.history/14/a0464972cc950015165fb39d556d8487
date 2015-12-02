@@ -1,0 +1,14 @@
+
+public class classwork2 {
+
+	public static void main(String[] args) {
+	
+int[][] matrica= {
+		{1,5,7},
+		{55,56,57,58,59},
+		{111,112}
+};
+System.out.println(matrica);
+	}
+
+}

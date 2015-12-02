@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class SumUntilNullIsEntered {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		int b=0;
+		System.out.println("Pls insert number:");
+		int newa = input.nextInt();
+		if (newa!=0){
+		for (int i = newa; i !=0; i++) {
+			b=b+newa;
+			System.out.println(b);
+			System.out.println("Pls insert number:");
+			int newa = input.nextInt();
+		}
+			
+		}
+	}
+
+}

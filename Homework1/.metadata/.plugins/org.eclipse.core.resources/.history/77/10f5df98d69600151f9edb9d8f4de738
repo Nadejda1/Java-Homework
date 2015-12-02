@@ -1,0 +1,10 @@
+public class H4_1 {
+
+	public static void main(String[] args) {
+		int[] test = { 1, 2, 3, 4, 5 };
+
+		for (int i : test) {
+			System.out.print(i + " ");
+		}
+	}
+}

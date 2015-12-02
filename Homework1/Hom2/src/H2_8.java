@@ -10,10 +10,10 @@ public class H2_8 {
 		int b = input.nextInt();
 		System.out.println("Pls insert c:");
 		int c = input.nextInt();
-		float D = (b*b)-(4*a*c);
+		double D = Math.pow(((double)a),2.0d) - 4*a*c;       //b*b-4ac
 		if (D>=0) {
-		float x1 = -b+D^(1/2);
-		float x2 = -b-D^(1/2);
+		double x1 = -b+Math.sqrt (D);
+		double x2 = -b-Math.sqrt (D);
 		System.out.println("X1 = " + x1 + "; X2 = " + x2);
 		}
 		else {

@@ -1,0 +1,24 @@
+public class H4_1 {
+
+	public static void main(String[] args) {
+		int[] myArray = { 1, 2, 3, 4, 5, 6 }; 
+		System.out.println(myArray[3]);
+		
+		int[]newm=new int[myArray.length];
+		for (int i = 0; i < newm.length; i++) {
+			newm[i]=myArray[i];
+		}System.out.println(newm[3]);
+	}
+}
+
+/*
+ * int[]test = { 3, 5, 7, 8, 1 };
+ * 
+ * int[] NewMassive = new int[test.length]; for (int i : NewMassive) {
+ * NewMassive[i]=test[i]; } System.out.print(NewMassive[3]);
+ * 
+ * 
+ * 
+ * }}
+ */
+

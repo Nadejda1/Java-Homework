@@ -1,0 +1,99 @@
+import java.util.Scanner;
+
+public class H4_12 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+
+		System.out.println("Pls input number: ");
+		int n = input.nextInt();
+		int array[][] = new int[n][n];
+		int k = 1;
+		int CounterMax=((2*n)/4)+1;  //counter se uvelichava sled 4 "for" i pri n=2, for=3, pri n=3, for=5, pri n=4 for=7 (pri uvelichenie na n s edno for se uvelichava s 2
+	                                 // da se izmisli po-dobre
+		for (int counter = 0; counter < CounterMax+1; counter++) {
+		
+	
+		int i = counter;
+		int j = counter;
+		for (j = counter; j < n - counter; j++) {
+			array[i][j] = k;
+			k++;
+			if (k == n * n + 1) {
+				break;
+			}
+		} 
+		j = n - 1 - counter;
+		for (i = counter + 1; i < n - 1 - counter; i++) {
+			array[i][j] = k;
+			k++;
+			if (k == n * n + 1) {
+				break;
+			}
+		}
+
+		i = n - 1;
+		for (j = n - 1 - counter; j >= counter; j--) {
+			array[i][j] = k;
+			k++;
+			if (k == n * n + 1) {
+				break;
+			}
+		}
+		j = counter;
+		for (i = n - 2 - counter; i > counter; i--) {
+			array[i][j] = k;
+			k++;
+			if (k == n * n + 1) {
+				break;
+			}
+		}
+		/*counter++;}
+		  i = counter;
+		for (j = counter; j < n - counter; j++) {
+			array[i][j] = k;
+			k++;
+			if (k == (n * n) + 1) {
+				break;
+			}
+		} 
+
+		j = n - 1 - counter;
+		for (i = counter + 1; i < n - 1 - counter; i++) {
+			array[i][j] = k;
+			k++;
+		}
+
+		i = n - 1 - counter;
+		for (j = n - 1 - counter; j >= counter; j--) {
+			array[i][j] = k;
+			k++;
+			if (k == n * n + 1) {
+				break;
+			}
+		}
+		counter++;
+		j = counter - 1;
+		for (i = n - 1 - counter; i > counter - 1; i--) {
+			array[i][j] = k;
+			;
+			k++;
+		}
+		i = counter;
+		for (j = counter; j < n - 1 - counter; j++) {
+			array[i][j] = k;
+			k++;
+			if (k == n * n + 1) {
+				break;
+			}
+		}*/
+
+		for (i = 0; i < array.length; i++) {
+			for (j = 0; j < array.length; j++) {
+				System.out.print(array[i][j] + " ");
+			}
+			System.out.println();
+		}
+
+	}
+}}

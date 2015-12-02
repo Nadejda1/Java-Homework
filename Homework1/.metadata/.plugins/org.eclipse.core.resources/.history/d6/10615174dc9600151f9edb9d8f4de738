@@ -1,0 +1,11 @@
+public class H4_1 {
+
+	public static void main(String[] args) {
+		int[]mass={5,9,4,6,3};
+		int[]newmass= new int[mass.length];
+		for (int i = 0; i < newmass.length; i++) {
+			newmass[i]=mass[i];
+			System.out.print(newmass[i]);	
+		}
+	}
+}

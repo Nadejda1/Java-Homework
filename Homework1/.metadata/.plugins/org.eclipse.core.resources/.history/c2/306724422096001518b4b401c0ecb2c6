@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
+public class H3_4 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		System.out.println("Pls insert N:");
+		int N = input.nextInt();
+		System.out.println("Pls insert K>N:");
+		int K = input.nextInt();
+		if (1 < N && N < K) {
+			int NFactoriel = 1;
+			for (int i = 1; i == N; i++) {
+				NFactoriel = NFactoriel * i;
+
+			}
+			int KFactoriel = 1;
+			for (int j = 1; j == K; j++) {
+				KFactoriel = KFactoriel * j;
+			}
+			int Result = NFactoriel / KFactoriel;
+			System.out.println("N/!/K/! = " + Result);
+		}
+		System.out.println("Ne e izpylneno uslovieto /(1<N<K)");
+	}
+}
